@@ -25,8 +25,9 @@ namespace SncMusic
             if (cn.State == System.Data.ConnectionState.Open)
             { // não é necessário utilizar chaves em estrurturas caso tenha apenas um comando}
                 cn.Close();
+            }
         }
-    }
         //comentarios
 
+    }
 }

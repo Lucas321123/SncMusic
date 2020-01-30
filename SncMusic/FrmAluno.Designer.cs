@@ -45,6 +45,9 @@
             this.mskCPF = new System.Windows.Forms.MaskedTextBox();
             this.mskTelefone = new System.Windows.Forms.MaskedTextBox();
             this.btnBuscar = new System.Windows.Forms.Button();
+            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.btnListar = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // txtNome
@@ -53,6 +56,7 @@
             this.txtNome.Name = "txtNome";
             this.txtNome.Size = new System.Drawing.Size(211, 20);
             this.txtNome.TabIndex = 0;
+            
             // 
             // txtEmail
             // 
@@ -70,6 +74,7 @@
             this.label1.Size = new System.Drawing.Size(35, 13);
             this.label1.TabIndex = 5;
             this.label1.Text = "Nome";
+            
             // 
             // label2
             // 
@@ -186,6 +191,7 @@
             this.mskCPF.Name = "mskCPF";
             this.mskCPF.Size = new System.Drawing.Size(106, 20);
             this.mskCPF.TabIndex = 1;
+            
             // 
             // mskTelefone
             // 
@@ -205,11 +211,41 @@
             this.btnBuscar.UseVisualStyleBackColor = true;
             this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
+            // listBox1
+            // 
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.Location = new System.Drawing.Point(528, 41);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(260, 251);
+            this.listBox1.TabIndex = 18;
+            this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
+            // 
+            // btnListar
+            // 
+            this.btnListar.Location = new System.Drawing.Point(713, 298);
+            this.btnListar.Name = "btnListar";
+            this.btnListar.Size = new System.Drawing.Size(75, 23);
+            this.btnListar.TabIndex = 19;
+            this.btnListar.Text = "Listar";
+            this.btnListar.UseVisualStyleBackColor = true;
+            this.btnListar.Click += new System.EventHandler(this.btnListar_Click);
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(528, 12);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(260, 20);
+            this.textBox1.TabIndex = 20;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
             // FrmAluno
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.btnListar);
+            this.Controls.Add(this.listBox1);
             this.Controls.Add(this.btnBuscar);
             this.Controls.Add(this.mskTelefone);
             this.Controls.Add(this.mskCPF);
@@ -229,6 +265,7 @@
             this.Controls.Add(this.txtNome);
             this.Name = "FrmAluno";
             this.Text = "FrmAluno";
+            this.Load += new System.EventHandler(this.FrmAluno_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -253,5 +290,8 @@
         private System.Windows.Forms.MaskedTextBox mskCPF;
         private System.Windows.Forms.MaskedTextBox mskTelefone;
         private System.Windows.Forms.Button btnBuscar;
+        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.Button btnListar;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }

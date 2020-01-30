@@ -23,5 +23,38 @@ namespace SncMusic
             frmaluno.MdiParent = this;
             frmaluno.Show();
         }
+
+        private void alunosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void cadastrosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void novaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmProfessor frmProfessor = new FrmProfessor();
+            frmProfessor.MdiParent = this;
+            frmProfessor.Show();
+        }
+
+        private void cursosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmCurso frmCurso = new FrmCurso();
+            frmCurso.MdiParent = this;
+            frmCurso.Show();
+
+
+        }
+
+        private void matrículaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmMatrícula frmMatrícula = new FrmMatrícula();
+            frmMatrícula.MdiParent = this;
+            frmMatrícula.Show();
+        }
     }
 }
